@@ -27,7 +27,7 @@ export const ORIGIN_FRAMES = [
   'FeykinFrame.png',
   'MendicantFrame.png',
   "Ode'nFrame.png",
-]
+] 
 
 const SIZES = { icon: 96, frame: 128 }
 const CONCURRENCY = 6
