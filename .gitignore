@@ -5,6 +5,6 @@ dist/
 *.log
 .DS_Store
 
-# Generated icon set, regenerate with `npm run sync-data`.
-# Comment this out if you'd rather commit the (~1MB) compressed icons.
-public/icons/
+# Generated icon set (`npm run sync-data`). Committed so CI can build without
+# an API key — the sync script needs AVAKOT_API_KEY, which CI doesn't have.
+# public/icons/
