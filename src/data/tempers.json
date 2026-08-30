@@ -1,0 +1,647 @@
+[
+  {
+    "id": "Afflicted Lurgy",
+    "name": "Afflicted Lurgy",
+    "description": "Chance to apply poison on hit.",
+    "icon": "AfflictedLurgy.png",
+    "origin": "Cassid",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Poison Proc Chance",
+        "ranks": "10%/20%",
+        "notes": "Applies on every strike. The second value is the documented double-stack chance."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Aftershock",
+    "name": "Aftershock",
+    "description": "Chance to add Arcanic damage on hit.",
+    "icon": "Aftershock.png",
+    "origin": "Feykin",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Arcanic Proc Chance",
+        "ranks": "10%/20%",
+        "notes": "Applies on each hit. Despite the in-game description, this does not add weapon damage."
+      },
+      {
+        "effect": "Arcanic Damage Over Time",
+        "ranks": "100% Hit Damage/100% Hit Damage",
+        "notes": "On an Arcanic proc, damage is dealt over two ticks at 50% of the triggering hit per tick. Each tick is affected by Enemy Armour. This status behavior is unchanged by double-stacking."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Arcane Alacrity",
+    "name": "Arcane Alacrity",
+    "description": "Magick Heavy Attacks charge more quickly.",
+    "icon": "ArcaneAlacrity.png",
+    "origin": "Universal",
+    "weaponType": "Magick",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Heavy Attack Charge Rate",
+        "ranks": "10%/20%",
+        "notes": "Applies to Magick Heavy Attack charging and stacks multiplicatively with Headlong."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Arcane Barrage",
+    "name": "Arcane Barrage",
+    "description": "Increased Damage and Stagger during Heavy Cast Attacks.",
+    "icon": "HeavyCastDamageStagger.png",
+    "origin": "Universal",
+    "weaponType": "Magick",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Heavy Cast Damage",
+        "ranks": "10 Damage/20 Damage",
+        "notes": "Applies to Heavy Casts."
+      },
+      {
+        "effect": "Heavy Cast Stagger Damage",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies to Heavy Casts. The magnitude is undocumented; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Arcane Rebound",
+    "name": "Arcane Rebound",
+    "description": "Deflected Magick projectiles deal increased damage.",
+    "icon": "ArcaneRebound.png",
+    "origin": "Universal",
+    "weaponType": "Magick",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Deflected Projectile Damage",
+        "ranks": "~20%/~40%",
+        "notes": "Applies to deflected Magick projectiles. Both values are approximate; the second is derived from the documented doubling rule."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Bounding Swipe",
+    "name": "Bounding Swipe",
+    "description": "Increased Damage and Stagger while Sprinting.",
+    "icon": "BoundingSwipe.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Sprint Attack Damage",
+        "ranks": "12 Damage/24 Damage",
+        "notes": "Applies to running attacks."
+      },
+      {
+        "effect": "Sprint Attack Stagger Damage",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies to running attacks. The magnitude is undocumented; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Breakneck",
+    "name": "Breakneck",
+    "description": "Heavy Attacks charge more quickly.",
+    "icon": "Breakneck.png",
+    "origin": "Universal",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Heavy Attack Charge Rate",
+        "ranks": "15%/30%",
+        "notes": "Applies to Melee Heavy Attack charging and stacks multiplicatively with Headlong."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Bypass",
+    "name": "Bypass",
+    "description": "Enemy defense reduced on first hit.",
+    "icon": "Bypass.png",
+    "origin": "Ode'n",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Enemy Armour Reduction",
+        "ranks": "10 Armour on First Hit/10 Armour on First Two Hits",
+        "notes": "A single stack reduces Enemy Armour on the first hit. Double-stacking permits one additional reduction on the second hit. Duration and total cap are undocumented."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Cowp",
+    "name": "Cowp",
+    "description": "Grants chance for doubled Stagger damage.",
+    "icon": "Cowp.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Double Stagger Chance",
+        "ranks": "10%/20%",
+        "notes": "On a successful proc, the hit deals twice its normal Stagger damage."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Dual Cast",
+    "name": "Dual Cast",
+    "description": "Chance for a second projectile to be cast.",
+    "icon": "DualCast.png",
+    "origin": "Feykin",
+    "weaponType": "Magick",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Duplicate Projectile Chance",
+        "ranks": "9%/18%",
+        "notes": "Applies to projectile-based Magick attacks. The duplicate carries the original projectile's Rune effects, including Archstorm and The Hollowing interactions."
+      },
+      {
+        "effect": "Non-Projectile Exclusion",
+        "ranks": "Assumed No/Assumed No",
+        "notes": "It is assumed, but unconfirmed, that Finishers and Ground Finishers are excluded. This applicability is unchanged by double-stacking."
+      },
+      {
+        "effect": "Mirrorspell-Deflected Projectile Exclusion",
+        "ranks": "Assumed No/Assumed No",
+        "notes": "It is assumed, but unconfirmed, that projectiles deflected with Mirrorspell are excluded. This applicability is unchanged by double-stacking."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Enkindled",
+    "name": "Enkindled",
+    "description": "Chance to add fire damage on hit.",
+    "icon": "Enkindled.png",
+    "origin": "Dendrit",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Ablaze Proc Chance",
+        "ranks": "10%/20%",
+        "notes": "Applies on hit. The proc does not appear to stack; that non-stacking behavior is not fully confirmed."
+      },
+      {
+        "effect": "Ablaze Damage Over Time",
+        "ranks": "35% Hit Damage per Second/35% Hit Damage per Second",
+        "notes": "A burning target takes this damage each second for four seconds. The proc does not appear to stack. This status behavior is unchanged by double-stacking."
+      },
+      {
+        "effect": "Ablaze Enemy Armour Reduction",
+        "ranks": "Up to 50%/Up to 50%",
+        "notes": "Enemy Armour is reduced by up to this amount while burning, then recovers gradually for six seconds after the burn ends. This status behavior is unchanged by double-stacking."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "First Strike",
+    "name": "First Strike",
+    "description": "Increased weapon damage against foes with full Life.",
+    "icon": "FirstStrike.png",
+    "origin": "Cassid",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Full Life Target Damage",
+        "ranks": "20 Damage/40 Damage",
+        "notes": "Applies when the foe is at full Life."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Fleet Fling",
+    "name": "Fleet Fling",
+    "description": "Increased Throw Speed.",
+    "icon": "FleetFling.png",
+    "origin": "Universal",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Throw Speed",
+        "ranks": "20%/40%",
+        "notes": "Applies to weapon throws."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Follow Up",
+    "name": "Follow Up",
+    "description": "Increased weapon damage on consecutive attacks following a Heavy Attack.",
+    "icon": "FollowUp.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Post Heavy Consecutive Light Damage",
+        "ranks": "7 Damage per Hit, 28 Maximum/14 Damage per Hit, 56 Maximum",
+        "notes": "Consecutive Light Attacks after any Heavy Attack accumulate this bonus. Damage is affected by move multipliers."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Fortified",
+    "name": "Fortified",
+    "description": "Take less Stagger damage when blocking.",
+    "icon": "Fortified.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Blocking Stagger Damage Reduction",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies while blocking. The magnitude is undocumented; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "From Above",
+    "name": "From Above",
+    "description": "Increased weapon damage from Aerial Attacks.",
+    "icon": "FromAbove.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Aerial Attack Damage",
+        "ranks": "10 Damage/20 Damage",
+        "notes": "Applies to aerial hits and is affected by move multipliers, so the displayed increase may be lower on many weapons."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Full Force",
+    "name": "Full Force",
+    "description": "Increased Damage and Stagger during Heavy Attacks.",
+    "icon": "FullForce.png",
+    "origin": "Universal",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Heavy Attack Damage",
+        "ranks": "15 Damage/30 Damage",
+        "notes": "Applies to Heavy Attacks."
+      },
+      {
+        "effect": "Heavy Attack Stagger Damage",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies to Heavy Attacks. The magnitude is undocumented; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Galvanic Strike",
+    "name": "Galvanic Strike",
+    "description": "Adds Voltaic damage to weapon, staggering enemies in area of effect when it discharges.",
+    "icon": "GalvanicStrike.png",
+    "origin": "Ode'n",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Voltaic Proc Chance",
+        "ranks": "10%/20%",
+        "notes": "Applies on each hit. Despite the in-game description, this does not add weapon damage."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Hale and Hearty",
+    "name": "Hale and Hearty",
+    "description": "Increased weapon damage at full Life.",
+    "icon": "HaleAndHearty.png",
+    "origin": "Universal",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Full Envoy Life Damage",
+        "ranks": "12 Damage/24 Damage",
+        "notes": "Applies while the Envoy is at full Life."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Heightened Parry",
+    "name": "Heightened Parry",
+    "description": "Increased parry window.",
+    "icon": "HeightenedParry.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Parry Window",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies to Parries and cannot appear on Magick weapons. The magnitude is undocumented; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Hunter's Relish",
+    "name": "Hunter's Relish",
+    "description": "Increased Life recovery when attacking during regain.",
+    "icon": "HuntersRelish.png",
+    "origin": "Dendrit",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Regain Hit Life Recovery",
+        "ranks": "10%/20%",
+        "notes": "Applies to regain hits. A single stack produces 2% additional lifesteal up to the regain cap; the second value follows the documented doubling rule."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Quick Draw",
+    "name": "Quick Draw",
+    "description": "Bows charge more quickly.",
+    "icon": "QuickDraw.png",
+    "origin": "Universal",
+    "weaponType": "Bow",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Bow Charge Rate",
+        "ranks": "~12.5%/~25%",
+        "notes": "Applies to Bow charging. Both values are approximate and require further confirmation."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Rejoinder",
+    "name": "Rejoinder",
+    "description": "Increased Damage and Stagger during dodge attacks.",
+    "icon": "Rejoinder.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Dodge Attack Base Damage",
+        "ranks": "10 Base Damage/20 Base Damage",
+        "notes": "Applies to Dodge Attacks, including Spectre Strikes, before the Spectre Strike multiplier."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Renewed Slayer",
+    "name": "Renewed Slayer",
+    "description": "Restore Life upon slaying a foe.",
+    "icon": "RenewedSlayer.png",
+    "origin": "Dendrit",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Kill Life Regeneration",
+        "ranks": "5 Life per Second for 4 Seconds/10 Life per Second for 4 Seconds",
+        "notes": "Triggers after slaying a foe. A later kill starts another instance that stacks during overlap. Taking damage interrupts the healing."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Rupture",
+    "name": "Rupture",
+    "description": "Increased Shatter and Stagger damage.",
+    "icon": "Rupture.png",
+    "origin": "Universal",
+    "weaponType": "Bow",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Splintered Embedded Arrow Damage",
+        "ranks": "8 Damage/16 Damage",
+        "notes": "Applies when embedded arrows are splintered by the Splinter Combat Art. The second value follows the documented doubling rule."
+      },
+      {
+        "effect": "Bow Stagger Damage",
+        "ranks": "Unknown/Unknown",
+        "notes": "The magnitude is undocumented, and it is unconfirmed whether this applies to all Bow shots or only Splinter. The page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Savagery",
+    "name": "Savagery",
+    "description": "Chance to add Bleed damage on hit.",
+    "icon": "Savagery.png",
+    "origin": "Mendicant",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Bleed Proc Chance",
+        "ranks": "10%/20%",
+        "notes": "Applies on hit."
+      },
+      {
+        "effect": "Bleed Damage Over Time",
+        "ranks": "20% Attack Damage per Tick/20% Attack Damage per Tick",
+        "notes": "On a Bleed proc, damage is dealt for five ticks. This status behavior is unchanged by double-stacking."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Sinister Volley",
+    "name": "Sinister Volley",
+    "description": "Chance to inflict fear to foes when thrown weapon hits.",
+    "icon": "SinisterVolley.png",
+    "origin": "Mendicant",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Throw Fear Proc Chance",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies on weapon throw. The chance is undocumented and does not appear to work on Bosses; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Slinger's Tempo",
+    "name": "Slinger's Tempo",
+    "description": "Chance for Stagger to become Knockdown.",
+    "icon": "SlingersTempo.png",
+    "origin": "Ode'n",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Stagger To Knockdown Chance",
+        "ranks": "10%/20%",
+        "notes": "On staggering a foe, a proc converts Stagger to Knockdown and enables a Ground Finisher. Ground Finishers do not receive the Lethality Multiplier."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Sullying Force",
+    "name": "Sullying Force",
+    "description": "Increased chance of Smite.",
+    "icon": "SullyingForce.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Smite Proc Chance",
+        "ranks": "3%/6%",
+        "notes": "Adds this chance to proc Smite."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Swift Strike",
+    "name": "Swift Strike",
+    "description": "Increased weapon attack speed.",
+    "icon": "SwiftStrike.png",
+    "origin": "Universal",
+    "weaponType": "Melee",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Weapon Attack Speed",
+        "ranks": "15%/30%",
+        "notes": "Also affects Envoy kicks and unarmed strikes while the weapon is thrown."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Swooning Blow",
+    "name": "Swooning Blow",
+    "description": "Increased Stagger while attacking.",
+    "icon": "SwooningBlow.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Hit Stagger Damage",
+        "ranks": "12 Stagger Damage/24 Stagger Damage",
+        "notes": "Applies on hit."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Sympathy Pang",
+    "name": "Sympathy Pang",
+    "description": "Damage inflicted from attacks will spread to another.",
+    "icon": "SympathyPang.png",
+    "origin": "Feykin",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Nearby Foe Damage Spread",
+        "ranks": "10%/20%",
+        "notes": "Applies on hit to a nearby foe and is not affected by Enemy Armour. It can propagate statuses, consumes additional Fellust charges, and can trigger Barkbare to steal Enemy Armour."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Unencumbered",
+    "name": "Unencumbered",
+    "description": "Increased weapon damage while no sidearm is equipped.",
+    "icon": "Unencumbered.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "No Sidearm Weapon Damage",
+        "ranks": "14 Damage/28 Damage",
+        "notes": "Applies while the Envoy has no Sidearm equipped."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Unnerving Blow",
+    "name": "Unnerving Blow",
+    "description": "Chance to inflict fear on foes when hit.",
+    "icon": "UnnervingBlow.png",
+    "origin": "Mendicant",
+    "weaponType": "Magick",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Hit Fear Proc Chance",
+        "ranks": "Unknown/Unknown",
+        "notes": "Applies on hit. The chance is undocumented and does not appear to work on Bosses; the page states that double-stacking doubles it."
+      }
+    ],
+    "possibleWeapons": []
+  },
+  {
+    "id": "Venger",
+    "name": "Venger",
+    "description": "Increased Riposte Damage.",
+    "icon": "Venger.png",
+    "origin": "Universal",
+    "weaponType": "All Weapons",
+    "subcategory": null,
+    "stats": [
+      {
+        "effect": "Riposte Base Damage",
+        "ranks": "15 Base Damage/30 Base Damage",
+        "notes": "Applies before the Riposte Multiplier, is unaffected by the Lethality Multiplier, and does not scale with Grace. It cannot appear on Magick weapons."
+      }
+    ],
+    "possibleWeapons": []
+  }
+]

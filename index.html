@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>TemperList · Soulframe temper tracker</title>
+    <meta
+      name="description"
+      content="Track which Tempers you hold across your Soulframe arsenal, see recipe progress, and plan what to dismantle."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/png" href="./src/assets/ui/favicon.png" />
+    <link rel="apple-touch-icon" href="./src/assets/ui/favicon.png" />
+    <script>
+      // Apply the stored theme before first paint so there's no flash.
+      try {
+        const t = localStorage.getItem('temperlist:theme')
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+

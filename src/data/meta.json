@@ -1,0 +1,9 @@
+{
+  "source": "wiki",
+  "note": "Bootstrapped from wiki.avakot.org. Weapon→temper eligibility is derived, not authoritative. Run `npm run sync-data` for API data.",
+  "syncedAt": "2026-08-28T21:17:51.418Z",
+  "counts": {
+    "tempers": 35,
+    "weapons": 56
+  }
+}

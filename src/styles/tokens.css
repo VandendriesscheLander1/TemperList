@@ -1,0 +1,122 @@
+/*
+ * Design tokens. The palette is avakot.market's published light + dark themes,
+ * so this tool reads as a sibling of it. Type, borders and radii follow the
+ * TemperList interface design: a serif display face over a Plex body/mono pair,
+ * and hairline translucent borders instead of the market's solid ink lines.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Light theme (avakot.market default) */
+  --bg-primary: #ddd6c6;
+  --bg-secondary: #e8e0cf;
+  --bg-tertiary: #d5cdbc;
+  --text-primary: #1c1a16;
+  --text-secondary: #2a2722;
+  --text-muted: #4d483d;
+  --border-color: #87694a;
+  /* Two weights of hairline: soft for dividers and resting cards, firm for
+     hover, focus and anything that has to hold its own against a fill. */
+  --border-soft: rgba(135, 105, 74, 0.34);
+  --border-firm: rgba(135, 105, 74, 0.6);
+  --accent-primary: #97693b;
+  --accent-hover: #c57111;
+  --accent-light: #97693b;
+  --accent-bg: #f5e6d3;
+  /* The one green, chosen to read on this canvas. Light drops a shade from the
+     design's #7cb369 so 11px labels clear a contrast floor. */
+  --success: #5f9a4b;
+  --warning: #d19536;
+  --warning-bg: #f5e6d3;
+  --error: #df4949;
+  --error-bg: #fef2f2;
+  --shadow-card: 0 1px 2px rgba(60, 40, 20, 0.1), 0 2px 10px rgba(60, 40, 20, 0.05);
+  --shadow-lg: 0 24px 70px rgba(28, 26, 22, 0.4);
+  --scrim: rgba(28, 26, 22, 0.5);
+  --scrollbar-track: transparent;
+
+  /* Typography */
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Newsreader Variable', Newsreader, Georgia, 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-12: 3rem;
+
+  /* Radius */
+  --radius-xs: 5px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Semantic aliases */
+  --surface-canvas: var(--bg-primary);
+  --surface-panel: var(--bg-secondary);
+  --surface-raised: var(--bg-tertiary);
+  --content-strong: var(--text-primary);
+  --content-default: var(--text-secondary);
+  --content-muted: var(--text-muted);
+  --line-default: var(--border-soft);
+  --line-strong: var(--border-firm);
+  --line-ink: var(--border-color);
+
+  --ring-focus: 0 0 0 3px color-mix(in srgb, var(--accent-primary) 34%, transparent);
+
+  --duration-fast: 0.12s;
+  --duration-normal: 0.2s;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  --sidebar-width: 216px;
+
+  /* Craftwork tier colours (avakot.market) */
+  --craftwork-stock: rgb(208, 200, 181);
+  --craftwork-military: rgb(184, 208, 181);
+  --craftwork-officer: rgb(181, 198, 208);
+  --craftwork-noble: rgb(209, 193, 176);
+  --craftwork-sovereign: rgb(208, 181, 181);
+  --craftwork-legendary: rgb(191, 181, 208);
+
+  /* Weapon Origin accents, sampled from the in-game temper frames. */
+  --origin-universal: #b9ae95;
+  --origin-cassid: #a35049;
+  --origin-dendrit: #7f9a5c;
+  --origin-feykin: #5b8bb5;
+  --origin-mendicant: #b5893f;
+  --origin-oden: #8f7fb5;
+
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg-primary: #1c1a16;
+  --bg-secondary: #2a2722;
+  --bg-tertiary: #3b3831;
+  --text-primary: #e8e0cf;
+  --text-secondary: #d0c8b5;
+  --text-muted: #a8a090;
+  --border-color: #3b3831;
+  --border-soft: rgba(168, 160, 144, 0.22);
+  --border-firm: rgba(168, 160, 144, 0.4);
+  --accent-primary: #a67c52;
+  --accent-hover: #c1a77b;
+  --accent-light: #c1a77b;
+  --accent-bg: #3d2e1f;
+  --success: #37c408;
+  --warning: #f2a41c;
+  --warning-bg: #3d2e1f;
+  --error: #c45a5a;
+  --error-bg: #3d2020;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.35), 0 2px 12px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 24px 70px rgba(0, 0, 0, 0.55);
+  --scrim: rgba(28, 26, 22, 0.62);
+}

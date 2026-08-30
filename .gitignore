@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Generated icon set, regenerate with `npm run sync-data`.
+# Comment this out if you'd rather commit the (~1MB) compressed icons.
+public/icons/
